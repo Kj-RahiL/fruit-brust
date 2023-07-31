@@ -49,7 +49,7 @@
     <nav>
       <div class=" flex items-center justify-between text-white lg:bg-primary-color p-2 md:bg-white bg-white rounded-full">
 
-        <div class=" order-2  flex-1 ">
+        <div class=" order-2  flex-1 flex justify-end ">
           <div class="dropdown lg:hidden text-gray-900">
 
             <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -79,7 +79,7 @@
           <img class="w-16" src="./images/logo.png" alt="">
           <h1 class="font-bold text-4xl text-black md:text-black lg:text-white">Fruit Burst</h1>
         </div>
-        <div id="hide" class="lg:order-3 md:order-2 relative order-none  flex-1 px-2 flex items-center justify-end rounded-full invisible md:visible lg:visible">
+        <div id="hide" class="lg:order-3 md:order-2 relative order-none  flex-1 px-2 flex items-center justify-end rounded-full ">
           <input type="text" placeholder="Search here"
             class=" rounded-full py-2 pl-3 text-sm md:border-2 " />
           <button type="submit" title="search" class="absolute text-gray-400 pr-3 ">
@@ -90,22 +90,23 @@
       </div>
     </nav>
     <!--carosel banner section -->
-    <div class=" mx-auto">
+    <div class="">
       <div class="carousel mt-12 rounded-lg">
         <!-- slide-1 -->
-        <div id="slide2" class="carousel-item relative w-full ">
-          <div class="hero h-56 w-full lg:min-h-[calc(100vh-112px)]" style="background-image: url(./images/banner2.png);">
+        <div id="slide1" class="carousel-item relative w-full ">
+          <div class=" hero h-56 w-full lg:min-h-[calc(100vh-112px)]" 
+          style="background-image: url(./images/banner1.png); background-position: cover; width: 100%;">
             <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
+            <div class="hero-content text-center ">
               <div class=" text-white">
                 <h1 class="mb-5 text-xl lg:text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
-                <p class="mb-5 sm:text-sm">We supply highly quality organic products.</p>
+                <p class="mb-5 text-xs lg:text-2xl">We supply highly quality organic products.</p>
                 <button class="btn bg-primary-color text-white hover:text-black">Shop Now</button>
               </div>
               <div
                 class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2  lg:left-5 lg:right-5 lg:top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a>
-                <a href="#slide3" class="btn btn-circle">❯</a>
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div>
           </div>
@@ -113,7 +114,7 @@
         </div>
         <!-- slide-2 -->
         <div id="slide2" class="carousel-item relative w-full ">
-          <div class="hero h-56 w-full lg:min-h-[calc(100vh-112px)]" style="background-image: url(./images/banner2.png);">
+          <div class="hero h-56 w-full lg:min-h-[calc(100vh-112px)]" style="background-image: url(./images/banner2.png); width: 100%;">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class=" text-white">
@@ -132,7 +133,7 @@
         </div>
         <!-- slide-3 -->
         <div id="slide3" class="carousel-item relative w-full ">
-          <div class="hero h-56 w-full lg:min-h-[calc(100vh-112px)]" style="background-image: url(./images/banner3.png);">
+          <div class="hero h-56 w-full lg:min-h-[calc(100vh-112px)]" style="background-image: url(./images/banner3.png); width: 100%;">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class=" text-white">
@@ -151,7 +152,7 @@
         </div>
         <!-- slide-4 -->
         <div id="slide4" class="carousel-item relative w-full ">
-          <div class="hero h-56 w-full lg:min-h-[calc(100vh-112px)]" style="background-image: url(./images/banner4.png);">
+          <div class="hero h-56 w-full lg:min-h-[calc(100vh-112px)]" style="background-image: url(./images/banner4.png); width: 100%;">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class=" text-white">
@@ -198,7 +199,7 @@
     </div>
   </div>
   </header>
-  <main class="mx-auto lg:p-4 mt-8 lg:mx-32">
+  <main class="w-4/5 mx-auto lg:p-4 mt-8 lg:mx-32">
     <!-- deal of the day section -->
     <section class=" mt-36">
       <div class="flex lg:flex-row flex-col gap-5 w-full my-12">
@@ -208,27 +209,27 @@
             in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <!-- time -->
-        <div class=" flex-1 lg:justify-end grid grid-flow-col gap-5 justify-center auto-cols-max">
+        <div class=" flex-1 lg:justify-end grid grid-flow-col gap-5 justify-center auto-cols-max ">
           <div class="flex flex-col">
-            <span class="countdown text-4xl font-extrabold">
+            <span class="countdown text-2xl lg:text-4xl font-extrabold">
               <span style="--value:15;"></span>:
             </span>
             <p class="font-medium text-base">days</p>
           </div>
           <div class="flex flex-col">
-            <span class="countdown text-4xl font-extrabold">
+            <span class="countdown text-2xl lg:text-4xltext-4xl font-extrabold">
               <span style="--value:10;"></span>:
             </span>
             <p class="font-medium text-base">hours</p>
           </div>
           <div class="flex flex-col">
-            <span class="countdown text-4xl font-extrabold">
+            <span class="countdown text-2xl lg:text-4xl font-extrabold">
               <span style="--value:24;"></span>:
             </span>
             <p class="font-medium text-base">min</p>
           </div>
           <div class="flex flex-col">
-            <span class="countdown text-4xl font-extrabold">
+            <span class="countdown text-2xl lg:text-4xlfont-extrabold">
               <span style="--value:39;"></span>
             </span>
             <p class="font-medium text-base">sec</p>
@@ -352,7 +353,7 @@
         <div class="hero-content text-center flex flex-col">
           <div class="max-w-md text-white ">
             <h1 class="mb-5 text-xl lg:text-4xl font-extrabold">Meet the team section</h1>
-            <p class="mb-5 sm:text-xs">Contrary to popular belief, is not simply random text. It has roots in a piece of
+            <p class="mb-5 p-1 text-xs lg:text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of
               classical Latin literature from 45 BC, making it over 2000 years old.We supply highly quality organic
               products.</p>
           </div>
@@ -517,7 +518,7 @@
     </section>
   </main>
   
-  <footer class="footer footer-center py-20 bg-[#121212] mx-auto container text-white ">
+  <footer  class="footer footer-center py-20 bg-[#121212] mx-auto container text-white ">
     <div class="ml-10 flex">
       <img class="w-16" src="./images/logo.png" alt="">
       <h1 class="font-bold text-4xl text-white">Fruit Burst</h1>
